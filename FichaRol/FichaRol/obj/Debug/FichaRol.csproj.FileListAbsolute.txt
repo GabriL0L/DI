@@ -1,0 +1,9 @@
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\bin\Debug\FichaRol.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\bin\Debug\FichaRol.exe
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\bin\Debug\FichaRol.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.Form1.resources
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.exe
+c:\users\usuario\documents\visual studio 2015\Projects\FichaRol\FichaRol\obj\Debug\FichaRol.pdb
