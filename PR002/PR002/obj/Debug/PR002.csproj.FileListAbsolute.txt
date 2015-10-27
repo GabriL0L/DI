@@ -7,6 +7,3 @@ c:\users\usuario\documents\visual studio 2015\Projects\PR002\PR002\obj\Debug\PR0
 c:\users\usuario\documents\visual studio 2015\Projects\PR002\PR002\obj\Debug\PR002.csproj.GenerateResource.Cache
 c:\users\usuario\documents\visual studio 2015\Projects\PR002\PR002\obj\Debug\PR002.exe
 c:\users\usuario\documents\visual studio 2015\Projects\PR002\PR002\obj\Debug\PR002.pdb
-C:\Users\Usuario\Documents\GitHub\DI\PR002\PR002\bin\Debug\PR002.exe.config
-C:\Users\Usuario\Documents\GitHub\DI\PR002\PR002\obj\Debug\PR002.exe
-C:\Users\Usuario\Documents\GitHub\DI\PR002\PR002\obj\Debug\PR002.pdb

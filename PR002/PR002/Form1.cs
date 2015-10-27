@@ -1,43 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Collections;
 namespace PR002
 {
     public partial class Form1 : Form
     {
-        int DISTX, DISTY;
+
         private Point RATON;
         private bool primero = true;
+        ArrayList listaPersonas = new ArrayList();
+        
         public Form1()
         {
             InitializeComponent();
+            nacer(); 
+              
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        //Método encargado de que nazcan nuevas personas con sus botones asociados y todas las características necesarias.
+        public void nacer()
         {
-            Point boton = new Point(button1.Location.X, button1.Location.Y);
-            Point raton = new Point(e.Location.X, e.Location.Y);
-            int movimiento = 1;
+            Persona p;
+            Button boton = new Button();
+            Random rnd = new Random();
 
-            if(calcDistancia(boton,raton) < 100)
+            //Al generar un botón, le damos todas sus características de forma dinámica.
+            if(listaPersonas.Count < 15) { 
+            boton.Size = new Size(0, 0); // esto se pondrá con los valores de la persona
+            boton.Location = new Point(rnd.Next(10,300), rnd.Next(10,300));
+            boton.BackgroundImage = Properties.Resources.persona;
+            boton.AutoSizeMode = AutoSizeMode.GrowOnly;
+            boton.BackColor = Color.Gray;
+            boton.BackgroundImageLayout = ImageLayout.Zoom;
+            boton.Cursor = Cursors.Cross;
+            boton.FlatAppearance.BorderSize = 0;
+            boton.FlatStyle = FlatStyle.Flat;
+            boton.Click += new EventHandler(this.click);
+           
+            this.Controls.Add(boton);
+
+            p = new Persona(0,boton.Location,boton);
+            listaPersonas.Add(p);
+
+            }else
             {
-                movimiento = 10;
-            }else if(calcDistancia(boton,raton) < 50)
-            {
-                movimiento = 50;
-            }else if(calcDistancia(boton,raton) < 25)
-            {
-                movimiento = 100;
+                timer1.Enabled = false;
+                MessageBox.Show("¡Has Perdido! Te gana hasta Krilin.");
+                this.Close();
             }
 
+        }
+
+        //Controla el movimiento del ratón y hace que la persona huya de él.
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+            Point raton = new Point(e.Location.X, e.Location.Y);
+            
             if (primero)
             {
                 primero = false;
@@ -45,40 +65,73 @@ namespace PR002
                 RATON.Y = e.Y;
             }
 
-            if (!raton.Equals(RATON) && (Math.Abs(boton.X - e.X) < Math.Abs(boton.X - RATON.X)
-                || Math.Abs(boton.Y - e.Y) < Math.Abs(boton.Y - RATON.Y)) )
+            foreach (Persona p in listaPersonas) { 
+            if (!raton.Equals(RATON) && (Math.Abs(p.getPosicion().X - e.X) < Math.Abs(p.getPosicion().X - RATON.X)
+                || Math.Abs(p.getPosicion().Y - e.Y) < Math.Abs(p.getPosicion().Y - RATON.Y)) )
             {
-                if (boton.X > e.Location.X && boton.X + button1.Width < this.Width)
+                
+               p.huir(e.Location, this.Size, calcDistancia(p.getPosicion(), raton));
+                
+                
+            }
+            }
+            RATON = raton;
+                           
+        }
+
+        //Método encargado de controlar el click sobre la persona, eliminando a esta del formulario cuando sucede.
+        private void click(object sender, EventArgs e) 
+        {
+            int borrar=0;
+            bool haBorrado = false;
+            
+            foreach(Persona p in listaPersonas)
+            {
+                
+                if (sender.Equals(p.getButton()))
                 {
-                    boton.X+=movimiento; //Hacer que se resetee en las esquinas
+                    haBorrado = true; //para que no borre al de la posicion 0 porque si
+                    p.morir();
+                    borrar = listaPersonas.IndexOf(p); 
                 }
-                else if (boton.X < e.Location.X && boton.X > 0)
-                {
-                    boton.X-=movimiento;
-                } 
-                if (boton.Y > e.Location.Y && boton.Y + button1.Height < this.Height)
-                {
-                    boton.Y+=movimiento;
-                }
-                else if (boton.Y < e.Location.Y && boton.Y > 0)
-                {
-                    boton.Y-=movimiento;
-                } 
+
             }
 
-                RATON = raton;
-                button1.Location = boton;             
+            if (haBorrado) { 
+            listaPersonas.RemoveAt(borrar);
+            }
+
+            if(listaPersonas.Count == 0) //Si el formulario se queda sin botones en él, el usuario ha ganado.
+            {
+                timer1.Enabled = false;
+                timer2.Enabled = false;
+                MessageBox.Show("¡Has Ganado! Enhorabuena"); 
+                this.Close();
+            }
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¡Has ganado!");
-            this.Close();
-        }
-
+        /*Método para calcular la distancia entre dos puntos. Necesario para calcular la distancia
+        entre ratón y persona */
         private double calcDistancia(Point a, Point b)
         {
           return Math.Sqrt(Math.Pow((b.X-a.X),2)+Math.Pow((b.Y-a.Y),2));
+        }
+
+        //Timer encargado de que la persona crezca constantemente.
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            foreach(Persona p in listaPersonas)
+            {
+                p.crecer();
+            }
+            
+        }
+
+        //Timer encargado de generar nuevas personas conforme pasa el tiempo.
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            nacer();
         }
     }
 }
