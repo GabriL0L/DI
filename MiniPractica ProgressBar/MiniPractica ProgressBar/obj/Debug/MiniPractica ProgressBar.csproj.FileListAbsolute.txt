@@ -1,0 +1,9 @@
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\bin\Debug\MiniPractica ProgressBar.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\bin\Debug\MiniPractica ProgressBar.exe
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\bin\Debug\MiniPractica ProgressBar.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica ProgressBar.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica_ProgressBar.Form1.resources
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica_ProgressBar.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica ProgressBar.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica ProgressBar.exe
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPractica ProgressBar\MiniPractica ProgressBar\obj\Debug\MiniPractica ProgressBar.pdb

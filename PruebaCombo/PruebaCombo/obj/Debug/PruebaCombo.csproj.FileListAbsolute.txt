@@ -1,0 +1,9 @@
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\bin\Debug\PruebaCombo.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\bin\Debug\PruebaCombo.exe
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\bin\Debug\PruebaCombo.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.Form1.resources
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.exe
+c:\users\usuario\documents\visual studio 2015\Projects\PruebaCombo\PruebaCombo\obj\Debug\PruebaCombo.pdb

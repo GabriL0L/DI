@@ -1,0 +1,9 @@
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\bin\Debug\MiniPracticaRadioButton.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\bin\Debug\MiniPracticaRadioButton.exe
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\bin\Debug\MiniPracticaRadioButton.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.Form1.resources
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.exe
+c:\users\usuario\documents\visual studio 2015\Projects\MiniPracticaRadioButton\MiniPracticaRadioButton\obj\Debug\MiniPracticaRadioButton.pdb
