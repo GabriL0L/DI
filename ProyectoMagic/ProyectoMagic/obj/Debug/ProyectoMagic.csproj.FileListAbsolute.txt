@@ -1,0 +1,10 @@
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\bin\Debug\ProyectoMagic.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\bin\Debug\ProyectoMagic.exe
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\bin\Debug\ProyectoMagic.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.Properties.Resources.resources
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.exe
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.pdb
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.Inicio.resources
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\ProyectoMagic\ProyectoMagic\obj\Debug\ProyectoMagic.Lista.resources
